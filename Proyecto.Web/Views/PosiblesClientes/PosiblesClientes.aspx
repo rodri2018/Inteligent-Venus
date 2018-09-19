@@ -1,12 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Recursos/Template/Template.Master" AutoEventWireup="true" CodeBehind="PosiblesClientes.aspx.cs" Inherits="Proyecto.Web.Views.PosiblesClientes.PosiblesClientes" %>
 
 <asp:Content ID="ContentHeader" ContentPlaceHolderID="header" runat="server">
-    <script src="../../css/sweetalert.css" type="text/javascript"></script>
-    <link href="../../css/sweetalert.css" type="text/css" rel="stylesheet"/>
+
 </asp:Content>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Contenedor" runat="server">
+    <script src="../../Js/sweetalert.min.js" type="text/javascript"></script>
+    <link href="../../css/sweetalert.css" type="text/css" rel="stylesheet"/>
 	<div class="mx-auto mt-5">
         <!-- primera fila-->
         <div class="form-group">
@@ -77,7 +78,7 @@
                     <asp:Label runat="server" ID="msj" Text="Los campos con * son obligatorios"></asp:Label>
                     <br />
 					<asp:Button runat="server" ID="btnGuardar" text="Guardar" CssClass="btn btn-primary" OnClick="btnGuardar_Click"></asp:Button>
-					<asp:Button runat="server" ID="btnCancelar" text="Cancelar" CssClass="btn btn-primary"></asp:Button>
+					<asp:Button runat="server" ID="btnCancelar" text="Cancelar" CssClass="btn btn-primary" OnClick="btnLimpiar_Click"></asp:Button>
 				</div>
 			</div>
 		</div>

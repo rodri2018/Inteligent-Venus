@@ -9,6 +9,7 @@ namespace Proyecto.Web.Views.PosiblesClientes
 
         public void limpiar()
         {
+            txtIdentificacion.Text = "";
             txtEmpresa.Text = "";
             txtPrimerNombre.Text = "";
             txtSegundoNombre.Text = "";
@@ -72,18 +73,23 @@ namespace Proyecto.Web.Views.PosiblesClientes
                 };
                 Controlador.PosiblesClientesController obposiblesClientesController = new Controlador.PosiblesClientesController();
                 if (string.IsNullOrEmpty(lblOpcion.Text)) lblOpcion.Text = "1";
-                ClientScript.RegisterStartupScript(this.GetType().GetType(), "Mensaje", "<script> alert('" + obposiblesClientesController.setAdministrarPosiblesClientesController(obclsPosiblesClientes,Convert.ToInt32(lblOpcion.Text)) + "') </script>");
+                ClientScript.RegisterStartupScript(this.GetType().GetType(), "Mensaje", "<script> swal('Exito','" + obposiblesClientesController.setAdministrarPosiblesClientesController(obclsPosiblesClientes,Convert.ToInt32(lblOpcion.Text)) + "','sucess') </script>");
                 lblOpcion.Text = string.Empty;
                 getPosiblesClientes();
                 //limpiar();
             }
             catch (Exception ex)
             {
-                ClientScript.RegisterStartupScript(this.GetType().GetType(), "Mensaje", "<script> alert('" + ex.Message + "') </script>");
+                ClientScript.RegisterStartupScript(this.GetType().GetType(), "mensaje", "<script>swal('Error', '"+ ex.Message+"!','error') </script>");
             }
         }
 
-        protected void gvwDatos_RowCommand(object sender, System.Web.UI.WebControls.GridViewCommandEventArgs e)
+        protected void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            limpiar();
+        }
+
+            protected void gvwDatos_RowCommand(object sender, System.Web.UI.WebControls.GridViewCommandEventArgs e)
         {
             try
             {
@@ -123,7 +129,7 @@ namespace Proyecto.Web.Views.PosiblesClientes
                     };
                     Controlador.PosiblesClientesController obposiblesClientesController = new Controlador.PosiblesClientesController();
                     
-                    ClientScript.RegisterStartupScript(this.GetType().GetType(), "Mensaje", "<script> alert('" + obposiblesClientesController.setAdministrarPosiblesClientesController(obclsPosiblesClientes, Convert.ToInt32(lblOpcion.Text)) + "') </script>");
+                    ClientScript.RegisterStartupScript(this.GetType().GetType(), "Mensaje", "<script> swal('Exito','" + obposiblesClientesController.setAdministrarPosiblesClientesController(obclsPosiblesClientes, Convert.ToInt32(lblOpcion.Text)) + "','success') </script>");
                     lblOpcion.Text = string.Empty;
                     getPosiblesClientes();
                     //limpiar();
