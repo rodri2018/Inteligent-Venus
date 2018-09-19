@@ -1,0 +1,12 @@
+C:\Users\ALEX\source\repos\Inteligent\Proyecto.Logica\obj\Debug\Proyecto.Logica.csprojAssemblyReference.cache
+C:\Users\ALEX\source\repos\Inteligent\Proyecto.Logica\obj\Debug\Proyecto.Logica.csproj.CoreCompileInputs.cache
+C:\Users\ALEX\source\repos\Inteligent\Proyecto.Logica\bin\Debug\Proyecto.Logica.dll
+C:\Users\ALEX\source\repos\Inteligent\Proyecto.Logica\bin\Debug\Proyecto.Logica.pdb
+C:\Users\ALEX\source\repos\Inteligent\Proyecto.Logica\obj\Debug\Proyecto.Logica.dll
+C:\Users\ALEX\source\repos\Inteligent\Proyecto.Logica\obj\Debug\Proyecto.Logica.pdb
+D:\Virginia-Estrada\Inteligent\Proyecto.Logica\obj\Debug\Proyecto.Logica.csprojAssemblyReference.cache
+D:\Virginia-Estrada\Inteligent\Proyecto.Logica\obj\Debug\Proyecto.Logica.csproj.CoreCompileInputs.cache
+D:\Virginia-Estrada\Inteligent\Proyecto.Logica\obj\Debug\Proyecto.Logica.dll
+D:\Virginia-Estrada\Inteligent\Proyecto.Logica\obj\Debug\Proyecto.Logica.pdb
+D:\Virginia-Estrada\Inteligent\Proyecto.Logica\bin\Debug\Proyecto.Logica.dll
+D:\Virginia-Estrada\Inteligent\Proyecto.Logica\bin\Debug\Proyecto.Logica.pdb
